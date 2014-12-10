@@ -5,4 +5,7 @@
 
 meteor-platform
 iron:router
+ian:accounts-ui-bootstrap-3
+accounts-password
+ian:bootstrap-3
 
