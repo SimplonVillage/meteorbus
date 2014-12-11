@@ -1,4 +1,11 @@
 <template name="home">
   <h1>Monte dans l'BUS</h1>
   <a href="{{pathFor 'insertParentsForm'}}" class="btn btn-default">Embarquer</a>
+
+  {{#if currentUser}}
+    <li>Nom: {{parents.nom}}</li>
+    <li>Prenom: {{parents.prenom}}</li>
+    <li>Adresse: {{parents.adresse}}</li>
+    <li>Téléphone: {{parents.telephone}}</li>
+  {{/if}}
 </template>
