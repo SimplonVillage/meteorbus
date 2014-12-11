@@ -6,3 +6,10 @@ Template.insertEnfantsForm.events({
     Router.go('home');
   }
 });
+
+Template.updateEnfantsForm.events({
+  'submit form': function(e){
+    e.preventDefault();
+    Router.go('home');
+  }
+});
