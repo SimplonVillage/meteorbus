@@ -1,3 +1,7 @@
 <template name="updateParentsForm">
   {{> quickForm collection="Parents" doc=this id="updateParentForm" type="update" omitFields="createdBy"}}
 </template>
+
+<template name="updateEnfantsForm">
+  {{> quickForm collection="Enfants" doc=this id="updateEnfantForm" type="update" omitFields="createdBy"}}
+</template>
