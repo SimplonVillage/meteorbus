@@ -21,5 +21,17 @@
       <li>Prenom: {{enfants.prenom}}</li>
       <li>Ecole: {{enfants.ecole}}</li>
       <li>Classe: {{enfants.classe}}</li>
+      <p>Prendra le car le mercredi:</p>
+        <p>Le matin
+          <li>Près du domicile: {{enfants.matin.domicile}}</li>
+          <li>à la garderie de Vaupillon: {{enfants.matin.garderie}}</li>
+          <li>autre lieu précisé: {{enfants.matin.autre}}</li>
+        </p>
+        <p>Le midi
+          <li>Près du domicile: {{enfants.midi.domicile}}</li>
+          <li>à la garderie de Vaupillon: {{enfants.midi.garderie}}</li>
+          <li>autre lieu précisé: {{enfants.midi.autre}}</li>
+          <i>Point d'arrêt du car: {{enfants.arret}}</i>
+      </p>
   {{/if}}
 </template>
