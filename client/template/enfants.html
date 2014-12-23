@@ -1,4 +1,5 @@
 <template name="insertEnfantsForm">
+    <h2>Votre enfant</h2>
   {{#if currentUser}}
     {{> quickForm collection="Enfants" id="insertEnfantsForm" type="insert" omitFields="createdBy"}}
   {{/if}}

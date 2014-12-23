@@ -1,25 +1,7 @@
 <template name="home">
-  <h1>Monte dans l'BUS</h1>
+  <h1>Bienvenue dans l'application qui facilite la gestion du bus scolaire</h1>
   {{#if currentUser}}
-    <a href="{{pathFor 'insertParentsForm'}}" class="btn btn-default">Embarquer</a>
-
+    <a href="{{pathFor 'insertParentsForm'}}" class="btn btn-default">Commencer</a>    
     
-    <p>Données parents</p>
-      <li>Nom: {{parents.nom}}</li>
-      <li>Prenom: {{parents.prenom}}</li>
-      <li>Rue: {{parents.adresse.rue}}</li>
-      <li>Code Postal: {{parents.adresse.codePostal}}</li>
-      <li>Ville: {{parents.adresse.ville}}</li>
-      <li>Téléphone domicile: {{parents.telephoneDomicile}}</li>
-      <li>Téléphone travail: {{parents.telephoneTravail}}</li>
-      <li>Email: {{parents.email}}</li>
-
-
-
-    <p>Données enfants</p>
-      <li>Nom: {{enfants.nom}}</li>
-      <li>Prenom: {{enfants.prenom}}</li>
-      <li>Ecole: {{enfants.ecole}}</li>
-      <li>Classe: {{enfants.classe}}</li>
   {{/if}}
 </template>

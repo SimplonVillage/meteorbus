@@ -1,0 +1,21 @@
+<template name="Tableau">
+    {{#if currentUser}}
+    <p>Données parents</p>
+      <li>Nom: {{parents.nom}}</li>
+      <li>Prenom: {{parents.prenom}}</li>
+      <li>Rue: {{parents.adresse.rue}}</li>
+      <li>Code Postal: {{parents.adresse.codePostal}}</li>
+      <li>Ville: {{parents.adresse.ville}}</li>
+      <li>Téléphone domicile: {{parents.telephoneDomicile}}</li>
+      <li>Téléphone travail: {{parents.telephoneTravail}}</li>
+      <li>Email: {{parents.email}}</li>
+
+
+
+    <p>Données enfants</p>
+      <li>Nom: {{enfants.nom}}</li>
+      <li>Prenom: {{enfants.prenom}}</li>
+      <li>Ecole: {{enfants.ecole}}</li>
+      <li>Classe: {{enfants.classe}}</li>
+      {{/if}}
+</template>
